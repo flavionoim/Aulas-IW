@@ -1,19 +1,90 @@
-*{
-    box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
+/* Seletor universal: aplica estilos a todos os elementos */
+* {
+    box-sizing: border-box; /* Garante que o padding e a borda sejam incluídos nas largura e altura total */
+    margin: 0; /* Remove as margens padrão de todos os elementos */
+    padding: 0; /* Remove o preenchimento (padding) padrão de todos os elementos */
 }
 
-html, body{
-    height: 100%;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #f0f2f5;   
+/* Estilos para os elementos raiz HTML e body */
+html, body {
+    height: 100%; /* Faz com que HTML e body ocupem a largura total da janela de visualização */
+    font-family: Arial, sans-serif; /* Define a fonte padrão como Arial */
+    background-color: #f0f2f5; /* Define uma cor de fundo cinza claro para toda a página */
 }
 
-.form-fundo{
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* Estilos para uma classe de container chamada 'form-fundo' */
+.form-fundo {
+    display: flex; /* Ativa o Flexbox para o layout */
+    justify-content: center; /* Alinha os itens horizontalmente no centro do container */
+    align-items: center; /* Alinha os itens verticalmente no centro do container */
+    height: 100vh; /* Faz com que este container ocupe a altura total do seu pai */
 }
 
+/* Estilos para um classe chamada 'form-login' */
+.form-login {
+    background-color: white; /* Define um fundo branco para o formulário de login */
+    padding: 30px; /* Adiciona um preenchimento dentro do formulário */
+    border-radius: 10px; /* Adiciona cantos arredondados ao formulário */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona uma leve sombra com 10px de desfoque, preto 10% opaco */
+    width: 100%; /* Faz com que o formulário ocupe 100% da largura de seu pai */
+    max-width: 400px; /* Limita a largura máxima do formulário a 400px */
+}
+
+/* Estilos para o cabeçalho de nível 2 (h2) */
+h2 {
+    text-align: center; /* Centraliza o texto dentro dos elementos h2 */
+    margin-bottom: 25px; /* Adiciona uma margem inferior de 25px abaixo dos elementos h2 */
+}
+
+/* Estilos para elementos de label */
+label {
+    font-weight: bold; /* Torna o texto dos labels em negrito */
+    display: block; /* Faz com que o label se torne um elemento de bloco, ocupando largura total e empilhando verticalmente */
+    margin-top: 10px; /* Adiciona uma margem superior de 10px acima das labels */
+}
+
+/* Estilos para elementos do tipo input com tipo 'email' ou 'password' */
+input {
+    width: 100%; /* Faz com que os campos de input ocupem 100% da largura de seu pai */
+    padding: 10px; /* Adiciona 12px de preenchimento (padding) dentro dos campos */
+    margin-top: 5px; /* Adiciona uma pequena margem superior de 5px aos campos de input */
+    margin-bottom: 15px; /* Adiciona uma margem inferior de 15px aos campos de input */
+    border: 1px solid #ccc; /* Define uma borda sólida de 1px cinza claro */
+    border-radius: 6px; /* Define cantos arredondados com raio de 6px */
+    font-size: 16px; /* Define o tamanho da fonte para o texto dentro dos campos de input */
+}
+
+/* Estilos para as classes 'btn_1' e 'btn_2' */
+.btn_1, .btn_2 {
+    width: 100%; /* Faz com que os botões ocupem 100% da largura de seu pai */
+    padding: 12px; /* Adiciona preenchimento (padding) dentro dos botões */
+    border: none; /* Remove a borda dos botões */
+    border-radius: 6px; /* Define cantos arredondados com raio de 6px */
+    font-size: 16px; /* Define o tamanho da fonte dos botões */
+    font-weight: bold; /* Deixa o texto dos botões em negrito */
+    cursor: pointer; /* Altera o cursor do mouse para indicar que são botões */
+    transition: background-color 0.3s ease; /* Adiciona uma transição suave para mudanças na cor de fundo em 0.3 segundos */
+    margin-top: 10px; /* Adiciona uma margem superior de 10px acima dos botões */
+}
+
+/* Estilos específicos para o botão com a classe 'btn_1' */
+.btn_1 {
+    background-color: #4CAF50; /* Define a cor de fundo de 'btn_1' para um tom de verde */
+    color: white;
+}
+
+/* Estilos de hover para o botão com a classe 'btn_1' */
+.btn_1:hover {
+    background-color: #45A049; /* Escurece a cor de fundo de 'btn_1' ao passar o mouse sobre ele */
+}
+
+/* Estilos específicos para o botão com a classe 'btn_2' */
+.btn_2 {
+    background-color: #1283f5; /* Define a cor de fundo de 'btn_2' para um tom de azul */
+    color: white;
+}
+
+/* Estilos de hover para o botão com a classe 'btn_2' */
+.btn_2:hover {
+    background-color: #0066d3; /* Escurece a cor de fundo de 'btn_2' ao passar o mouse sobre ele */
+}
