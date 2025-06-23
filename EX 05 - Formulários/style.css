@@ -1,0 +1,90 @@
+
+* {
+    box-sizing: border-box; 
+    margin: 0; 
+    padding: 0; 
+}
+
+
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif; 
+    background-color: #f0f2f5; 
+}
+
+
+.form-fundo {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    height: 100vh; 
+}
+
+
+.form-login , .form-cadastro {
+    background-color: white; 
+    padding: 30px; 
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    width: 100%; 
+    max-width: 400px;
+}
+
+
+h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+
+label {
+    font-weight: bold;
+    display: block; 
+    margin-top: 10px; 
+}
+
+
+input {
+    width: 100%;
+    padding: 10px; 
+    margin-top: 5px; 
+    margin-bottom: 15px; 
+    border: 1px solid #ccc; 
+    border-radius: 6px; 
+    font-size: 16px; 
+}
+
+
+.btn_1, .btn_2 {
+    width: 100%; 
+    padding: 12px; 
+    border: none; 
+    border-radius: 6px; 
+    font-size: 16px; 
+    font-weight: bold; 
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+    margin-top: 10px; 
+}
+
+
+.btn_1 {
+    background-color: #4CAF50; 
+    color: white;
+}
+
+
+.btn_1:hover {
+    background-color: #45A049; 
+}
+
+
+.btn_2 {
+    background-color: #1283f5; 
+    color: white;
+}
+
+
+.btn_2:hover {
+    background-color: #0066d3; 
+}
