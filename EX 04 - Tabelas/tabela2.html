@@ -2,55 +2,102 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabela 2</title>
+    <title>TABELA 2</title>
     <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f8ff; 
+            padding: 40px;
+            color: #333;
+        }
 
+        h1 {
+            text-align: center;
+            color: #003366;
+        }
+
+        table {
+            margin: 0 auto;
+            border-collapse: collapse;
+            width: 80%;
+            background-color: #e6f2ff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        caption {
+            font-size: 24px;
+            font-weight: bold;
+            padding: 15px;
+            color: #004080;
+        }
+
+        th, td {
+            border: 1px solid #99c2ff;
+            padding: 12px;
+            text-align: center;
+        }
+
+        thead th {
+            background-color: #cce6ff;
+            color: #003366;
+        }
+
+        tfoot th {
+            background-color: #cce0ff;
+            font-weight: bold;
+        }
+
+        th[rowspan] {
+            background-color: #b3d9ff;
+            font-weight: bold;
+        }
+
+        img {
+            height: 75px;
+            width: 100px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
     </style>
 </head>
 <body>
-    <h1>Exercitando Tabelas Com Imagens</h1>
+    <h1>EXERCITANDO TABELAS COM IMAGENS</h1>
     <table>
-        <caption>Bandas/Cantores Favoritos(as)</caption>
+        <caption>COMIDAS FAVORITAS</caption>
         <thead>
             <tr>
                 <th>Grupos</th>
-                <th>Nomes</th>
                 <th colspan="3" scope="colgroup">Escolhas</th>
             </tr>
         </thead>
         <tfoot>
             <tr>
                 <th colspan="2">Total</th>
-                <th colspan="3">12 Opções</th>
+                <th colspan="3">12 opções</th>
             </tr>
         </tfoot>
         <tbody>
             <tr>
                 <th rowspan="2">Mulheres</th>
                 <td>Maria</td>
-                <td><img src="img/blackpink.jpg" alt=""></td>
-                <img src="img/bts.webp" alt="">
-                <img src="img/RAdiohead.jpg" alt="">
+                <td><img src="img/blackpink.jpg" alt="Blackpink"></td>
+                <td><img src="img/Luan-Santana_Divulgacao.png" alt="Luan Santana"></td>
             </tr>
             <tr>
                 <td>Mariana</td>
-                <td><img src="img/acdc.jpg" alt=""></td>
-                <img src="img/mettalica.png" alt="">
-                <img src="img/Luan-Santana_Divulgacao.png" alt="">
+                <td><img src="img/guns.jpg" alt="Guns N' Roses"></td>
+                <td><img src="img/acdc.jpg" alt="AC/DC"></td>
             </tr>
             <tr>
                 <th rowspan="2">Homens</th>
-                <td>Lucas</td>
-                <td><img src="img/guns.jpg" alt=""></td>
-                <img src="img/nirvana.jpg" alt="">
-                <img src="img/chicobuarque2.jpg" alt="">
+                <td>Luiz</td>
+                <td><img src="img/chicobuarque2.jpg" alt="Chico Buarque"></td>
+                <td><img src="img/turmadopagode.jpg" alt="Turma do Pagode"></td>
             </tr>
             <tr>
-                <td>Pedro</td>
-                <td><img src="img/chitaozinho.jpg" alt=""></td>
-                <img src="img/turmadopagode.jpg" alt="">
-                <img src="img/menosemais.png" alt="">
+                <td>Lucas</td>
+                <td><img src="img/menosemais.png" alt="Menos é Mais"></td>
+                <td><img src="img/mettalica.png" alt="Metallica"></td>
             </tr>
         </tbody>
     </table>
